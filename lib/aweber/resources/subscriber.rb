@@ -2,7 +2,7 @@ module AWeber
   module Resources
     class Subscriber < Resource
       basepath "/subscribers"
-      
+
       api_attr :name,          :writable => true
       api_attr :misc_notes,    :writable => true
       api_attr :email,         :writable => true
@@ -10,6 +10,7 @@ module AWeber
       api_attr :custom_fields, :writable => true
       api_attr :ad_tracking,   :writable => true
       api_attr :last_followup_message_number_sent, :writable => true
+      api_attr :tags, :writable => true
 
       api_attr :ip_address
       api_attr :is_verified
